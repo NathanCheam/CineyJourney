@@ -1,0 +1,298 @@
+html {
+    position: relative;
+    background-color: #faf3dd;
+}
+body {
+    /* Margin bottom by footer height */
+   /* max-height: 100vh;*/
+    max-width: 100vw;
+    background-color: #faf3dd;
+    
+}
+.no-footer footer {
+    display: none;
+  }
+
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: "Viaoda Libre", serif;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: "Viaoda Libre", serif;
+    margin-top : 15px;
+    margin-bottom: 35px;
+    text-decoration: underline;
+}
+.textuel-welcome p {
+    text-align: justify;
+    padding-bottom: 0;
+}
+.list-group-item {
+    margin: 50px;
+}
+footer {
+    width: 100%;
+    background-color: #FAF3DD;
+    /* Set the fixed height of the footer here */
+    position: absolute;
+    bottom: 0;
+}
+
+.app-info {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: #333333 2px 2px 2px;
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    
+}
+
+.nav a{
+    color: white;
+    margin: 0 15px;
+    font-size: 1.4rem;
+    color: black;
+    font-family: "DM Sans", serif;
+}
+
+.nav .nav-first-links img{
+    width: 5rem;
+}
+
+.nav a:hover{
+    color: #F4743B;
+    text-decoration: none;
+}
+
+
+
+/* WELCOME PAGE ---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.textuel-welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 0px;
+}
+
+.textuel-welcome h1{
+    font-size: 5rem;
+}
+
+.textuel-welcome {
+    font-size: 1.1rem;
+}
+
+#parent-grosCercle-motie {
+    aspect-ratio: 2/1;
+    width: 50%; 
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+.welcome-gros-cercle{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    transform-origin: center;
+    /*background-color: grey;
+    border-radius: 9999px; 
+    border: 1px solid red;
+    transition-duration: 1s;*/
+}
+.img-land {
+    z-index: 0;
+    position: absolute;
+
+}
+
+/*.welcome-gros-cercle:hover{
+    transform: rotate(60deg);
+    transition-duration: 1s;
+}
+*/
+.welcome-parent-moyen-circle{
+    width: 15rem;
+    height: 15rem;
+}
+
+.container-carre-petit-cercle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(60deg);
+    z-index: 10;
+    /* top: 1%;
+    left: 50%;
+    transform: translate(-50%, -1%); */
+    /* background-color: red; */
+}
+
+.container-carre-petit-cercle1{
+    rotate: 0deg;
+    z-index: 10;
+}
+
+.container-carre-petit-cercle2{
+    rotate:  60deg;
+    z-index: 10;
+}
+
+.container-carre-petit-cercle3{
+    rotate:  120deg;
+    z-index: 10;
+}
+
+.container-carre-petit-cercle4{
+    rotate:  180deg;
+    z-index: 10;
+}
+
+
+.container-carre-petit-cercle5{
+    rotate:  240deg;
+    z-index: 10;
+}
+
+
+.container-carre-petit-cercle6{
+    rotate:  300deg;
+    z-index: 10;
+}
+
+
+
+.welcome-moyen-cercle {
+    width: 25%;
+    aspect-ratio: 1/1; /* Assure un cercle parfait */
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -1%);
+    border-radius: 50%; /* Rend l'élément circulaire */
+    overflow: hidden; /* Cache tout ce qui dépasse les bords du cercle */
+    z-index: 10;
+    background-color: rgb(255, 22, 22); /* Test pour déboguer */
+    pointer-events: auto;
+}
+
+.welcome-moyen-cercle img {
+    width: 100%; /* Image occupe tout l'espace du cercle */
+    height: 100%; /* Assure que l'image s'adapte */
+    object-fit: cover; /* Garde les proportions tout en remplissant le cercle */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none; /* Supprime le translate pour bien positionner */
+    z-index: 10;
+    filter: grayscale(1);
+}
+.welcome-moyen-cercle a {
+    width: 100%; /* Image occupe tout l'espace du cercle */
+    height: 100%;
+}
+
+.active {
+    z-index: 9999999 !important;
+}
+.active img {
+    filter: grayscale(0);
+}
+.boutton {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;;
+}
+.boutton button {
+    margin: 10px;
+    background-color: #25291C; 
+    border: none;
+    border-radius: 90px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "DM Sans", serif;
+}
+.boutton button:hover {
+    background-color: #F4743B;
+    color: white;
+}
+
+
+/* .welcome-moyen-cercle1{
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -1%);
+    background-color: red;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 10;
+}
+
+.welcome-moyen-cercle2{
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 21.5%;
+    left: 87%;
+    transform: translate(-87%, -21.5%);
+    background-color: red;
+    border-radius: 50%;
+   z-index: 2;
+}
+
+.welcome-moyen-cercle3{
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    top: 21.5%;
+    left: 13%;
+    transform: translate(-13%, -21.5%);
+    background-color: black;
+    border-radius: 50%;
+   z-index: 2;
+}
+
+.welcome-moyen-cercle4{
+    position: absolute;
+}
+
+.welcome-moyen-cercle5{
+    position: absolute;
+}
+
+.welcome-moyen-cercle6{
+    position: absolute;
+
+} */
+
+
+a {
+    cursor: auto!important;
+}
